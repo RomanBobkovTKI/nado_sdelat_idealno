@@ -1,10 +1,14 @@
 .header {
+  position: relative;
   padding: 60px 0 0 0;
 }
 
+.header:hover {
+  color: var(--header-hover-color);
+}
+
 .header:hover::before {
-  z-index: 1;
-  display: block;
+  z-index: 0;
 
   position: absolute;
   right: 22px;
@@ -38,14 +42,6 @@
   letter-spacing: 0.035em;
   text-transform: uppercase;
   text-align: center;
-}
-
-.header__item:hover::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: rgb(255 255 255 /30%);
-  z-index: 0;
 }
 
 .header__item:last-of-type::after {
