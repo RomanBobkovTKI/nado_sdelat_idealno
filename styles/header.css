@@ -3,7 +3,7 @@
 }
 
 .header:hover::before {
-  z-index: 0;
+  z-index: 1;
   display: block;
 
   position: absolute;
@@ -38,6 +38,14 @@
   letter-spacing: 0.035em;
   text-transform: uppercase;
   text-align: center;
+}
+
+.header__item:hover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgb(255 255 255 /30%);
+  z-index: 0;
 }
 
 .header__item:last-of-type::after {
