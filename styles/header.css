@@ -1,6 +1,5 @@
 .header {
   position: relative;
-  min-width: 739px;
   padding: 60px 0 0 0;
 
   font-family: Raleway, Arial, sans-serif;
@@ -41,6 +40,10 @@
   box-shadow: 0 16px var(--black-color);
 }
 
-.header:last-of-type::after {
+.header__item {
+  display: block;
+}
+
+.header__item:last-of-type::after {
   content: '*';
 }
